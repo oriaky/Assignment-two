@@ -20,7 +20,7 @@
     align-items: center;
 }
 .wave {
-    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-width: 0.8px;
     font-size: 48px;
     -webkit-text-stroke-color: black;
     font-weight: 800;
@@ -57,7 +57,7 @@
     font-weight: 600;
     align-items: center;
 }
-.section2 {
+.section1 {
     background-image: url(assets/hero-bg.png);
     height: 680px;
     width: 100%;
@@ -107,5 +107,57 @@
     border-radius: 40px;
     background-color: transparent;
     color: #00FF88;
+    font-size: 16px;
+}
+.section2 {
+    height: 620px;
+    width: 100%;
+    background-color: #1A0B2E;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.s-header {
+    color: white;
+    font-style: Bold;
+    font-size: 48px;
+    font-weight: 700;
+}
+.s-para {
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+}
+.achievements{
+    border: 1px solid gray;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+}
+.items {
+    height: 200px;
+    margin-top: 80px;
+    width: 200px;
+}
+.item-header {
+    color: #00FF88;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.item-para {
+    opacity: 0.8;
+    color: white;
     font-size: 16px;
 }
