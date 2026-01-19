@@ -31,6 +31,7 @@
         rgba(247, 233, 63, 1)
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .nav-links a {
@@ -56,6 +57,8 @@
     cursor: pointer;
     font-weight: 600;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .section1 {
     background-image: url(assets/hero-bg.png);
@@ -90,6 +93,8 @@
     letter-spacing: 0%;
     text-align: center;
     text-transform: capitalize;
+    position: relative;
+    z-index: 2;
 }
 #s2-para {
     color: rgba(255, 255, 255, 1);
@@ -108,6 +113,8 @@
     background-color: transparent;
     color: #00FF88;
     font-size: 16px;
+    position: relative;
+    z-index: 2;
 }
 .section2 {
     height: 620px;
@@ -118,12 +125,15 @@
     display: flex;
     gap: 10px;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 .s-header {
     color: white;
     font-style: Bold;
     font-size: 48px;
     font-weight: 700;
+    text-align: center;
 }
 .s-para {
     font-size: 16px;
@@ -195,9 +205,6 @@
 .premium {
     grid-row: span 2;
 }
-.resources {
-
-}
 .mobile {
     grid-column: span 2;
 }
@@ -208,7 +215,7 @@
     grid-column: span 2;
 }
 .box-header {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: white;
 }
@@ -223,4 +230,54 @@
     font-weight: 400;
     opacity: 0.6;
     color: white;
+}
+.section4 {
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ep-card {
+    height: 425px;
+    width: 370px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 24px;
+}
+.episodes {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.youtube {
+    border-radius: 24px 24px 0px 0px;
+    border: none;
+    overflow: hidden;
+}
+.preview-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.duration {
+    display: flex;
+    gap: 7px;
+    color: #00FF88;
+}
+.host {
+    background-color: rgba(53, 17, 101, 0.4);
+    height: 280px;
+    width: 80%;
+    border-radius: 40px;
+}
+.host-header {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+.icons {
+    padding: 1.5%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 30px;
 }
