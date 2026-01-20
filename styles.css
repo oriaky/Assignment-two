@@ -60,6 +60,23 @@
     position: relative;
     z-index: 2;
 }
+.listen {
+    background: linear-gradient(
+        210deg,
+        #9100f8,
+        #fb09b4,
+        #f7e93f 80%
+    );
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
 .section1 {
     background-image: url(assets/hero-bg.png);
     height: 680px;
@@ -80,11 +97,17 @@
     position: absolute;
     top: 250px;
 }
+.circle {
+    width: 20%; 
+    height: 35%; 
+    position: absolute;
+    top: 200px;
+}
 .logo {
     display: flex;
     justify-content: center;
 }
-#s2-header {
+.s2-header {
     color: rgba(255, 255, 255, 1);
     font-style: Extra Bold;
     font-size: 60px;
@@ -96,7 +119,7 @@
     position: relative;
     z-index: 2;
 }
-#s2-para {
+.s2-para {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 400;
@@ -139,6 +162,10 @@
     font-size: 16px;
     color: white;
     opacity: 0.8;
+}
+.monthly {
+    display: flex;
+    justify-content: center;
 }
 .achievements{
     border: 1px solid gray;
@@ -328,4 +355,140 @@
 .footer-links {
     display: flex;
     gap: 42px;
+}
+.hamburger {
+    display: none;
+}
+.podcast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+    .tech {
+        font-size: 30px;
+    }
+    .wave {
+        font-size: 30px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .subscribe {
+        display: none;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;   
+    }
+    .circle {
+        width: 45%;
+        top: 80px;
+        height: 30%;
+    }
+    .microphone {
+        width: 11%;
+        height: 12%;
+        top: 140px;
+    }
+    .buttons {
+        display: flex;
+        gap: 8px;
+    }
+    .section1 {
+        /* height: 550px; */
+        padding-top: 200px;
+        height: 545px;
+    }
+    .s2-header {
+        font-size: 40px;
+    }
+    .s2-para {
+        padding: 0px 20px 0px 20px;
+    }
+    .s-header {
+        font-size: 32px;
+    }
+    .achievements {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin-top: 30px;
+    }
+    .items {
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .podcast {
+        gap: 0px;
+    }
+    .section2 {
+        height: 600px;
+        padding-bottom: 270px;
+    }
+    .grid-header {
+        font-size: 32px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0px 20px 0px 20px;
+    }
+    .section3 {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+    .premium {
+    grid-row: span 1;
+    }
+    .mobile {
+        grid-column: span 1;
+    }
+    .global {
+        grid-column: span 1;
+    }
+    .exclusive {
+        grid-column: span 1;
+    }
+    .episodes {
+        flex-direction: column;
+    }
+    .host-div {
+        flex-direction: column;
+    }
+    .host-image {
+        height: 150px;
+        width: 150px;
+    }
+    .host {
+        height: 500px;
+        text-align: center;
+    }
+    .icon-img {
+        justify-content: center;
+    }
+    .host-header {
+        font-size: 24px;
+    }
+    .footer {
+        height: 244px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 }
